@@ -1,4 +1,4 @@
-function toggleOutput(id){
+function toggleOutput(id) {
     const el = document.getElementById(id);
-    el.classList.toggle("show")
+    el.classList.toggle("show");
 }
