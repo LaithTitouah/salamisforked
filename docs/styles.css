@@ -172,6 +172,18 @@ footer {
     background: #33202a;
     color: white;
 }
+.output-box {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #221822;
+    color: #f7f4ec;
+    border-radius: 12px;
+    font-family: monospace;
+}
+.output-box.shadow{
+    display: block;
+}
 
 @media (max-width: 700px){
     nav {
