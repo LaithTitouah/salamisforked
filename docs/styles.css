@@ -70,6 +70,7 @@ header h2{
     font-size: clamp(2.2rem, 6vw, 4.5rem);
     line-height: 1.05;
     margin: 1rem 0;
+    color: #7a5563;
     text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3);
 }
 header section p{
