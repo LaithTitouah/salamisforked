@@ -116,14 +116,20 @@
                 </div>
             </article>
             <article>
-            <h3>4. Looping Over a Range</h3>
+            <h3>4. Descriptive Statistics and Normalization</h3>
             <pre><code>
-                let total: Int = 0
-                for i in (0..5) {
-                    total = total + i
-                }
-                print(total)
-            </code></pre>
+                let data: Vec&lt;Float&gt; = [2.0, 4.0, 4.0, 4.0, 5.0, 7.0, 9.0]
+                let avg: mean(data)
+                let lo = min(data)
+                let hi = max(data)
+                let normalized = (data - lo) / (hi - lo)
+                plot(data)
+                plot(normalized) </code></pre>
+                <button onclick="toggleOutput('output4')">Show Output</button>
+
+                <div id="output4" class="output-box">
+                    <iframe src="examples/stats.html" title="Descriptive Statiscs Output"></iframe>
+                    </div>
             </article>
             <article>
                 <h3>5. Reading CSV Data and Plotting</h3>
