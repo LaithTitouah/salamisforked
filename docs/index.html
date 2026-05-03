@@ -132,12 +132,24 @@
                     </div>
             </article>
             <article>
-                <h3>5. Reading CSV Data and Plotting</h3>
+                <h3>5. CSV Data Analysis </h3>
                 <pre><code>
-                    let table: Matrix&lt;Float&gt; = readCsv("prices.csv")
-                    let prices: Vec&lt;Float&gt; = col(table, 1)
-                    plot(prices)
+                    let m = readCsv("prices.csv")
+                    let prices = col(m,1)
+                    let volumes = col(m,2)
+
+                    let avg_price = mean(prices)
+                    let lo_price = min(prices)
+                    let hi_price = max(prices)
+
+                    let norm_prices = (prices - lo_price) /(hi_price - lo_price)
+                    plot(prices, norm_prices)
+                    plot(volumes)
                 </code></pre>
+                <button onclick="toggleOutput('output5')">Show Output</button>
+                <div id="output5" class=""output-box>
+                    <iframe src="Examples/csv_analysis.html" title = "CSV Analysis Output"></iframe>
+                </div>
             </article>
             <section id="developers">
                 <article>
