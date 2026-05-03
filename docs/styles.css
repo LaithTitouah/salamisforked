@@ -70,6 +70,7 @@ header h2{
     font-size: clamp(2.2rem, 6vw, 4.5rem);
     line-height: 1.05;
     margin: 1rem 0;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3);
 }
 header section p{
     max-width:700px;
@@ -85,7 +86,6 @@ header section a{
     color: #33202a;
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
@@ -111,7 +111,6 @@ h2{
     margin-top: 0;
     color: #51344d;
     font-size: 2rem;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
 }
 h3{
     color: #6f5060
