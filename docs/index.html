@@ -78,7 +78,7 @@
         <section id="examples">
             <h2>Example Programs</h2>
             <article>
-                <h3>1. Function with static Types</h3>
+                <h3>1. Basic Statistics</h3>
                 <pre><code>let data: Vec&lt;Float&gt; = [10.0, 20.0, 30.0, 40.0]
                     print(mean(data))
                     print(sum(data))</code></pre>
@@ -95,15 +95,25 @@
                 }    
                 let result: Float = square(5.0)
                 print(result)</code></pre>
+                <button onclick="toggleOutput('output2')"> Show Output </button>
+                <div id="output2" class="output-box">
+                    <p>25.0></p>
+                </div>
             </article>
             <article>
-                <h3>3. Simulation with a Normal distribution</h3>
+                <h3>3. Monte Carlo Simulation</h3>
                 <pre><code>
-                    led d: Normal&lt; Float, Float&gt; = Normal(0.0, 1.0)
-                    let samples: Vec&lt;Float&gt; = simulate(1000){
-                        sample(d)
-                    }
-                    histogram(samples)</code></pre>
+                    let results = simulate(2000) {
+                        sample(Normal(0,0,1.0))
+                    } 
+                print("=== Normal(0,1) - 2000 samples ===")
+                print("Mean: "+ format(mean(results), 4))
+                histogram(results)
+                </code></pre>
+                <button onclick="toggleOutput('output3')">Show Output</button>
+                <div id="output3" class = "output-box">
+                <iframe src="docs/Examples/montecarlo.html" title="Monte Carlo Simulation Output"></iframe>
+                </div>
             </article>
             <article>
             <h3>4. Looping Over a Range</h3>
