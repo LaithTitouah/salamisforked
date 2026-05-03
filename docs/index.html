@@ -104,7 +104,7 @@
                 <h3>3. Monte Carlo Simulation</h3>
                 <pre><code>
                     let results = simulate(2000) {
-                        sample(Normal(0,0,1.0))
+                        sample(Normal(0.0,1.0))
                     } 
                 print("=== Normal(0,1) - 2000 samples ===")
                 print("Mean: "+ format(mean(results), 4))
@@ -112,7 +112,7 @@
                 </code></pre>
                 <button onclick="toggleOutput('output3')">Show Output</button>
                 <div id="output3" class = "output-box">
-                <iframe src="docs/Examples/montecarlo.html" title="Monte Carlo Simulation Output"></iframe>
+                <iframe src="Examples/montecarlo.html" title="Monte Carlo Simulation Output"></iframe>
                 </div>
             </article>
             <article>
