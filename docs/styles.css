@@ -85,6 +85,7 @@ header section a{
     color: #7a5563;
     text-decoration: none;
     font-weight: bold;
+    text-shadow: 0 2px 5px rgb(247, 244, 244);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2)
 }
 
