@@ -181,7 +181,7 @@ footer {
     border-radius: 12px;
     font-family: monospace;
 }
-.output-box.shadow{
+.output-box.show{
     display: block;
 }
 
